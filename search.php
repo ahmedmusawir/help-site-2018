@@ -11,7 +11,7 @@ get_header(); ?>
 <section class="container-fluid">
 
 
-	<section id="primary" class="content-area col-md-8 col-lg-8">
+	<section id="primary" class="content-area col-md-12 col-lg-12">
 		<main id="main" class="site-main" role="main">
 
 		<?php
@@ -21,35 +21,41 @@ get_header(); ?>
 				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'moose-frame' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
 
+			<section class="flex-container">
+
+
+				<?php
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
+
+						/**
+						 * Run the loop for the search to output the results.
+						 * If you want to overload this in a child theme then include a file
+						 * called content-search.php and that will be used instead.
+						 */
+						get_template_part( 'template-parts/content', 'search' );
+
+					endwhile;
+
+				?>
+
+			</section> <!-- end flex-container -->
+
 			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
 
-			endwhile;
-
-			the_posts_navigation();
 
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+			
+		<?php the_posts_navigation();  ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-	<div class="sidebar col-md-4 col-lg-4">
-
-		<?php get_sidebar();  ?>
-		
-	</div>
 
 </section> <!-- End Container -->
 <?php

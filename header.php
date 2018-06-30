@@ -11,7 +11,6 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'moose-frame' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 	
@@ -28,7 +27,7 @@
 			            <span class="icon-bar"></span>
 			            <span class="icon-bar"></span>
 			        </button>
-			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span><img class="logo" src="<?php echo $siteLogo; ?>" alt=""></span> </a>
+			    <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><span>THE HELP SITE</span> </a>
 			    </div>
 
 			    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,6 +53,9 @@
 	  		  </div><!-- /.container-fluid -->
 
 			</nav>
+		</div>
+		<div class="search-form container">
+			<?php get_search_form(); ?>
 		</div>
 
 	</header><!-- #masthead -->

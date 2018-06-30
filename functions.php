@@ -326,3 +326,41 @@ function woocommerce_support() {
 
 //Gravity Form Label Removal
 add_filter( 'gform_enable_field_label_visibility_settings', '__return_true' );
+
+/**
+
+*
+
+* THIS IS TO GET THE CURRENT TEMPLATE NAME FOR DEBUGGING REASON
+
+*
+
+*/
+
+add_filter( 'template_include', 'var_template_include', 1000 );
+
+function var_template_include( $t ){
+
+$GLOBALS['current_theme_template'] = basename($t);
+
+return $t;
+
+}
+
+
+function get_current_template( $echo = false ) {
+
+if( !isset( $GLOBALS['current_theme_template'] ) )
+
+return false;
+
+if( $echo )
+
+echo $GLOBALS['current_theme_template'];
+
+else
+
+return $GLOBALS['current_theme_template'];
+
+}
+

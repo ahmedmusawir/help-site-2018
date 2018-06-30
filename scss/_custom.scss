@@ -10,8 +10,8 @@ $brand-primary: lighten( #be8706, 10% );
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 // @import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700italic,400italic,700);
-@import url(https://fonts.googleapis.com/css?family=Bevan);
-// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+// @import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 // @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 html { 
@@ -49,8 +49,6 @@ width:85%;
 #masthead {
 
 	@include background(linear-gradient(black, white) left repeat);
-	padding-top: 5rem;
-	padding-bottom: 5rem;
 }
 
 #content {
@@ -182,310 +180,6 @@ img {
 
 /**
  *
- * Front Page Styles
- *
- */
-.front-page-block-1 {
-	background-color: rgba( $steel, .85);
-	height: 95rem;
-
-	.front-page-header {
-		text-align: center;
-		padding-bottom: 10rem;
-		padding-top: 1rem;
-		// padding-top: 6rem;
-
-		img {
-			// border: 3px solid red;
-		}
-		h1 {
-			font-family: 'Bevan', cursive;
-			font-size: 9rem;
-			color: $silver;
-		}
-
-		h4 {
-			font-family: 'Vollkorn', serif;
-			font-size: 4rem;
-			color: $silver;
-
-			padding-top: 2rem;
-			padding-bottom: 3rem;
-
-			i {
-				color: lighten( $silver, 0%);
-			}
-		}
-
-		@media (max-width: 768px) {
-	    	h1 {
-	    		font-size: 5rem;
-	    	}	
-	    	h4 {
-	    		font-size: 3rem;
-	    	}
-	    }
-	}
-
-}
-
-/**
- *
- * Services Area
- *
- */
-
-
-.front-page-block-2 {
-	// background-color: rgba( darken( $brand-primary, 10% ), .9);
-
-
-	@include background(linear-gradient( rgba( $silver, .8 ), $brand-primary ) left repeat);
-
-
-
-	text-align: center;
-	padding-bottom: 5rem;
-	padding-top: 5rem;
-	color: darken( $gray-lighter, 5% );
-
-	.service-box {
-		padding-top: 3rem;
-		padding-bottom: 3rem;
-
-		.service-header {
-			min-height: 15rem;
-			height: auto;
-
-			i {
-				// margin-bottom: .5rem;
-			}
-		}
-
-		.service-text {
-			// padding-top: 1rem;
-			// min-height: 150px;
-			font-size: 1.7rem;
-			font-weight: 400;
-
-		}
-
-		h2 {
-			font-size: 2.5rem;
-		}
-
-		a {
-			margin-top: 2rem;
-		}
-
-
-	}
-
-	#left {
-		color: darkblue;
-	}
-
-	#middle {
-		color: purple;
-	}
-
-	#right {
-		color: black;
-	}
-
-}
-
-/**
- *
- * Frontpage Slider 
- *
- */
-
-
-.front-page-block-3 {
-
-	background-color: rgba( darken( $oil, 8% ), 1);
-
-	.slider {
-		padding-top: 3rem;
-		margin-top: 3rem;
-
-		img {
-			width: 100%;
-		}
-
-		#fp-carousel {
-			// border: 2px solid red;
-			padding-top: 2rem;
-			padding-bottom: 1.5rem;
-		}
-	}
-
-}
-
-/**
- *
- * Featured Section
- *
- */
-
-
-.front-page-block-4 {
-	// background: url(http://janesnew/wp-content/uploads/2015/12/featured-box-bg.jpg) no-repeat center center fixed; 
-	// -webkit-background-size: cover;
-	//   -moz-background-size: cover;
-	//   -o-background-size: cover;
-	//   background-size: cover;
-
-	color: lightgray;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-
-
-	.featured-box {
-
-		.featured-content {
-
-			text-align: center;
-			// background-color: rgba( darken( $oil, 10% ), .8);
-			@include background(linear-gradient( $oil, rgba( $oil, .8 ) ) left repeat);
-			// background-size: 0% 0%;
-			
-			img {
-				width: 100%;
-				@include transition(all 2.0s ease-in-out);
-
-			}
-
-			@include transition(all 1s ease-in-out);
-
-			&:hover {
-				// background-color: darken( $brand-primary, 0% );
-				// background-color: #1a82f7;
-				  // background: url(images/linear_bg_2.png);
-				  // background-repeat: repeat-x;
-
-				  /* Safari 4-5, Chrome 1-9 */
-				  // background-color: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(#be8706));
-
-				@include background(linear-gradient( $gray-light, $brand-primary ) left repeat);
-
-				color: black;
-
-				img {
-					@include transform(translateY(50px));
-					@include transform(scale(0.9) rotate(-3deg));
-					@include transform-origin(center top);
-					@include transform-style(preserve-3d);
-				}
-			}
-
-			// padding: .5rem;
-			margin-bottom: .5rem;
-
-				.featured-header {
-					min-height: 8rem;
-					height: auto;
-
-					i {
-						// margin-bottom: .5rem;
-					}
-				}
-
-				.featured-text {
-					// padding-top: 1rem;
-					// min-height: 150px;
-
-				}
-
-				h2 {
-					font-size: 2.5rem;
-				}
-
-				a {
-					margin-top: 2rem;
-					margin-bottom: 3rem;
-					background-color: transparent;
-					border: 2px solid $gray-light;
-
-					&:hover {
-						background-color: $oil;
-						border: 2px solid black;
-					}
-				}
-
-				p {
-					font-size: 1.8rem;
-					font-weight: 300;
-					padding: 1rem;
-					padding-right: 3rem;
-					padding-left: 3rem;
-				}
-
-
-			}
-
-	}
-
-
-}
-
-/**
- *
- * Frontpage Call Out Section
- *
- */
-
-
-.front-page-block-5 {
-
-	background-color: rgba( darken( $jet, 20% ), .5);
-	border: 1px solid gray;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
-
-
-	.callout-box {
-
-		h2,h3 {
-			font-family: 'Bevan', cursive;
-			font-variant: small-caps;
-			text-align: center;
-			// text-transform: uppercase;
-			color: lighten( $brand-info, 25%);
-			// color: lighten( $steel, 50%);
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-		}
-
-		h2 {
-			font-size: 5rem;
-		}
-
-		h3 {
-			font-size: 3rem;
-		}
-
-		#interest {
-			color: lighten( $brand-primary, 0% );
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-			// border: 1px solid red;
-		}
-
-		@media (max-width: 480px) {
-	    	h2 {
-	    		font-size: 3rem;
-	    	}	
-	    	h3 {
-	    		font-size: 2rem;
-	    	}
-	    }
-	}
-
-
-}
-
-/**
- *
  * Navigation For UnderScore Only
  *
  */
@@ -597,25 +291,34 @@ img {
 	// display: none;
 
 } 
-.content-area {
-	// background-color: $snow;
-	// border: 3px solid red;
-	padding: 0;
-}
+// .content-area {
+// 	// background-color: $snow;
+// 	// border: 1rem solid red;
+// 	padding: 0;
+	
+// }
 
 .site-main {
-	// border: 1px solid yellow;
-	// background-color: $steel;
-	// border: 1px solid blue;
-	padding: 0;
-	margin-top: 1.1rem;
 
+	margin: 2rem auto;
+	margin-bottom: 50px;
+	// border: 4px solid blue;
+
+
+	.flex-container {
+		@media (min-width: 759px) {
+			
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
 	.page-header {
 
 		text-align: center;
 
 		.page-title {
-			font-family: 'Bevan', cursive;
+			font-family: 'Raleway', cursive;
 			font-variant: small-caps;
 			padding-bottom: 1rem;
 			color: lighten( $gray, 10% );
@@ -625,15 +328,12 @@ img {
 	.error-404 {
 		color: lighten( $brand-primary, 10% );
 	}
-
 	.none-found {
 		// border: 3px solid yellow;
 		color: lighten( $brand-primary, 20% );
 		font-size: 2rem;
 		padding-left: 1rem;
 	}
-
-
 	.nav-links {
 		// border: 1px solid blue;
 		padding-left: 1rem;
@@ -647,7 +347,6 @@ img {
 			color: lighten( $brand-primary, 10% );
 		}
 	}
-
 	.navigation {
 
 		.nav-links {
@@ -683,7 +382,7 @@ img {
 
 
 		h1 {
-			font-family: 'Bevan', cursive;
+			font-family: 'Raleway', cursive;
 			font-variant: small-caps;
 			font-size: 6rem;
 			color: darken( $gray-lighter, 10% );
@@ -718,32 +417,29 @@ img {
  *
  */
 .blog-post {
-	// background-color: rgba( darken( $silver, 0% ), .9);
-	// border: 1px solid blue;
+
+	flex-basis: 350px;
+	box-shadow: 9px 9px 18px lighten($gray-light, 30%);
+	// border: 10px solid white;
+
+	&:hover {
+		box-shadow: 0px 0px 0px lighten($gray-light, 60%);
+
+	}
 
 	background-color: rgba( lighten( $gray-light, 50% ), .8);
 	padding: 1rem;
 	margin-bottom: 1rem;
 	margin-right: 0rem;
-	// margin-left: .15rem;
 
 	.entry-header {
-		// background-color: rgba( darken( $gray-light, 50% ), .65);
-		@include background(linear-gradient( white, black) left repeat);
-		// box-shadow: 3px 3px 8px $gray-light;
-
-		margin-bottom: 2.5rem;
-		// margin-left: 1.3rem;
-		// margin-right: 1.3rem;
-
-
 
 		h1, h2 {
-			font-size: 3.5rem;
+			font-size: 2.5rem;
 			font-variant: small-caps;
 			font-weight: 300;
-			padding-top: 2rem;
-			padding-left: 2rem;
+			padding: 2rem;
+			padding-left: 1rem;
 			font-family: 'Lato', sans-serif;
 			color: white;
 
@@ -761,7 +457,7 @@ img {
 		.entry-meta {
 			padding-bottom: 1rem;
 			padding-left: 2rem;
-			color: $gray-lighter;
+			color: $gray-light;
 
 			a {
 				color: darken( $brand-primary, 10% );
@@ -812,8 +508,8 @@ img {
 	}
 
 	.entry-footer {
-		padding-bottom: 2rem;
-		padding-top: 2rem;
+		// padding-bottom: 2rem;
+		// padding-top: 2rem;
 
 		.cat-links {
 			// border: 1px solid red;
@@ -889,9 +585,9 @@ img {
  * Single Page w Sidebar
  *
  */
-.single-page {
+.single {
 
-	background-color: rgba( lighten( $gray-light, 45% ), .8);
+	// background-color: rgba( lighten( $gray-light, 45% ), .8);
 
 	h1, h2, h3, h4, h5 {
 		color: lighten( $gray-light, 5% );
@@ -905,11 +601,12 @@ img {
 	}
 
 	.entry-header {
-		h2 {
-			font-family: 'Bevan', cursive;
+		h1 {
+			font-family: 'Raleway', cursive;
 			font-variant: small-caps;
 			font-size: 4rem;
-			color: darken( $brand-primary, 10% );
+			// color: darken( $brand-primary, 10% );
+			color: $gray-light;
 			padding-bottom: 1rem;
 			padding-right: 2rem;
 		}
@@ -1091,7 +788,7 @@ img {
 	font-size: 2rem;
 	color: darken( $gray-light, 10% );
 	h2 {
-		font-family: 'Bevan', cursive;
+		font-family: 'Raleway', cursive;
 		font-variant: small-caps;
 		padding-bottom: 2rem;
 		
@@ -1108,7 +805,7 @@ img {
 	color: lighten( $gray, 5% );
 
 	h2 {
-		font-family: 'Bevan', cursive;
+		font-family: 'Raleway', cursive;
 		font-variant: small-caps;
 		padding-bottom: 2rem;
 		color: lighten( $gray, 10% );

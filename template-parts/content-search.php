@@ -22,7 +22,7 @@
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-summary post-index-only">
+	<!-- <div class="entry-summary post-index-only">
 		
 		<pre>
 		
@@ -46,8 +46,8 @@
 
 
 
-	</div><!-- .entry-summary -->
-
+	</div>
+ -->
 	<footer class="entry-footer">
 		<?php moose_frame_entry_footer(); ?>
 	</footer><!-- .entry-footer -->

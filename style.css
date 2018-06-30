@@ -16,35 +16,10 @@ If you want to add your own css code, please do it in /css/custom.css
 */
 /* =WordPress Core
 -------------------------------------------------------------- */
-
-
-/***************************************************************************
- *  Code
- ***************************************************************************/
-pre {
-  background: #eee;
-background-image: -webkit-linear-gradient(#eee 50%,#e0e0e0 50%);
-background-image: -moz-linear-gradient(#eee 50%,#e0e0e0 50%);
-background-image: -ms-linear-gradient(#eee 50%,#e0e0e0 50%);
-background-image: -o-linear-gradient(#eee 50%,#e0e0e0 50%);
-background-image: linear-gradient(#eee 50%,#e0e0e0 50%);
-background-position: 0 0;
-background-repeat: repeat;
-background-size: 4.5em 4.5em;
-color: #555;
-font-family: monospace, serif;
-font-size: 16px;
-line-height: 2.25em;
-margin: 2em 2.25em;
-overflow: auto;
-padding: 0 2.25em;
-width:85%;
-}
-
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
-@import url(https://fonts.googleapis.com/css?family=Bevan);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5946,11 +5921,31 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+/***************************************************************************
+ * 	Code
+ ***************************************************************************/
+pre {
+  background: #eee;
+  background-image: -webkit-linear-gradient(#eee 50%, #e0e0e0 50%);
+  background-image: -moz-linear-gradient(#eee 50%, #e0e0e0 50%);
+  background-image: -ms-linear-gradient(#eee 50%, #e0e0e0 50%);
+  background-image: -o-linear-gradient(#eee 50%, #e0e0e0 50%);
+  background-image: linear-gradient(#eee 50%, #e0e0e0 50%);
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 4.5em 4.5em;
+  color: #555;
+  font-family: monospace, serif;
+  font-size: 16px;
+  line-height: 2.25em;
+  margin: 2em 2.25em;
+  overflow: auto;
+  padding: 0 2.25em;
+  width: 85%; }
+
 #masthead {
   background: -webkit-linear-gradient(black, white) left repeat;
-  background: linear-gradient(black, white) left repeat;
-  padding-top: 5rem;
-  padding-bottom: 5rem; }
+  background: linear-gradient(black, white) left repeat; }
 
 #content {
   font-family: 'Lato', sans-serif;
@@ -6023,181 +6018,6 @@ img {
     margin-top: 46px; } }
 /**
  *
- * Front Page Styles
- *
- */
-.front-page-block-1 {
-  background-color: rgba(102, 102, 102, 0.85);
-  height: 95rem; }
-  .front-page-block-1 .front-page-header {
-    text-align: center;
-    padding-bottom: 10rem;
-    padding-top: 1rem; }
-    .front-page-block-1 .front-page-header h1 {
-      font-family: 'Bevan', cursive;
-      font-size: 9rem;
-      color: #EFEFEF; }
-    .front-page-block-1 .front-page-header h4 {
-      font-family: 'Vollkorn', serif;
-      font-size: 4rem;
-      color: #EFEFEF;
-      padding-top: 2rem;
-      padding-bottom: 3rem; }
-      .front-page-block-1 .front-page-header h4 i {
-        color: #efefef; }
-    @media (max-width: 768px) {
-      .front-page-block-1 .front-page-header h1 {
-        font-size: 5rem; }
-      .front-page-block-1 .front-page-header h4 {
-        font-size: 3rem; } }
-
-/**
- *
- * Services Area
- *
- */
-.front-page-block-2 {
-  background: -webkit-linear-gradient(rgba(239, 239, 239, 0.8), #efaa08) left repeat;
-  background: linear-gradient(rgba(239, 239, 239, 0.8), #efaa08) left repeat;
-  text-align: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  color: #e2e2e2; }
-  .front-page-block-2 .service-box {
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
-    .front-page-block-2 .service-box .service-header {
-      min-height: 15rem;
-      height: auto; }
-    .front-page-block-2 .service-box .service-text {
-      font-size: 1.7rem;
-      font-weight: 400; }
-    .front-page-block-2 .service-box h2 {
-      font-size: 2.5rem; }
-    .front-page-block-2 .service-box a {
-      margin-top: 2rem; }
-  .front-page-block-2 #left {
-    color: darkblue; }
-  .front-page-block-2 #middle {
-    color: purple; }
-  .front-page-block-2 #right {
-    color: black; }
-
-/**
- *
- * Frontpage Slider 
- *
- */
-.front-page-block-3 {
-  background-color: #1f1f1f; }
-  .front-page-block-3 .slider {
-    padding-top: 3rem;
-    margin-top: 3rem; }
-    .front-page-block-3 .slider img {
-      width: 100%; }
-    .front-page-block-3 .slider #fp-carousel {
-      padding-top: 2rem;
-      padding-bottom: 1.5rem; }
-
-/**
- *
- * Featured Section
- *
- */
-.front-page-block-4 {
-  color: lightgray;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
-  .front-page-block-4 .featured-box .featured-content {
-    text-align: center;
-    background: -webkit-linear-gradient(#333333, rgba(51, 51, 51, 0.8)) left repeat;
-    background: linear-gradient(#333333, rgba(51, 51, 51, 0.8)) left repeat;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    margin-bottom: .5rem; }
-    .front-page-block-4 .featured-box .featured-content img {
-      width: 100%;
-      -webkit-transition: all 2s ease-in-out;
-      -moz-transition: all 2s ease-in-out;
-      transition: all 2s ease-in-out; }
-    .front-page-block-4 .featured-box .featured-content:hover {
-      /* Safari 4-5, Chrome 1-9 */
-      background: -webkit-linear-gradient(#777777, #efaa08) left repeat;
-      background: linear-gradient(#777777, #efaa08) left repeat;
-      color: black; }
-      .front-page-block-4 .featured-box .featured-content:hover img {
-        -webkit-transform: translateY(50px);
-        -moz-transform: translateY(50px);
-        -ms-transform: translateY(50px);
-        -o-transform: translateY(50px);
-        transform: translateY(50px);
-        -webkit-transform: scale(0.9) rotate(-3deg);
-        -moz-transform: scale(0.9) rotate(-3deg);
-        -ms-transform: scale(0.9) rotate(-3deg);
-        -o-transform: scale(0.9) rotate(-3deg);
-        transform: scale(0.9) rotate(-3deg);
-        -webkit-transform-origin: center top;
-        -moz-transform-origin: center top;
-        -ms-transform-origin: center top;
-        -o-transform-origin: center top;
-        transform-origin: center top;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        -ms-transform-style: preserve-3d;
-        -o-transform-style: preserve-3d;
-        transform-style: preserve-3d; }
-    .front-page-block-4 .featured-box .featured-content .featured-header {
-      min-height: 8rem;
-      height: auto; }
-    .front-page-block-4 .featured-box .featured-content h2 {
-      font-size: 2.5rem; }
-    .front-page-block-4 .featured-box .featured-content a {
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-      background-color: transparent;
-      border: 2px solid #777777; }
-      .front-page-block-4 .featured-box .featured-content a:hover {
-        background-color: #333333;
-        border: 2px solid black; }
-    .front-page-block-4 .featured-box .featured-content p {
-      font-size: 1.8rem;
-      font-weight: 300;
-      padding: 1rem;
-      padding-right: 3rem;
-      padding-left: 3rem; }
-
-/**
- *
- * Frontpage Call Out Section
- *
- */
-.front-page-block-5 {
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid gray;
-  padding-top: 10rem;
-  padding-bottom: 10rem; }
-  .front-page-block-5 .callout-box h2, .front-page-block-5 .callout-box h3 {
-    font-family: 'Bevan', cursive;
-    font-variant: small-caps;
-    text-align: center;
-    color: #c5e9f3;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  .front-page-block-5 .callout-box h2 {
-    font-size: 5rem; }
-  .front-page-block-5 .callout-box h3 {
-    font-size: 3rem; }
-  .front-page-block-5 .callout-box #interest {
-    color: #efaa08;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
-  @media (max-width: 480px) {
-    .front-page-block-5 .callout-box h2 {
-      font-size: 3rem; }
-    .front-page-block-5 .callout-box h3 {
-      font-size: 2rem; } }
-
-/**
- *
  * Navigation For UnderScore Only
  *
  */
@@ -6210,16 +6030,18 @@ img {
   background-color: rgba(102, 102, 102, 0.85);
   padding-bottom: 5rem; }
 
-.content-area {
-  padding: 0; }
-
 .site-main {
-  padding: 0;
-  margin-top: 1.1rem; }
+  margin: 2rem auto;
+  margin-bottom: 50px; }
+  @media (min-width: 759px) {
+    .site-main .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
   .site-main .page-header {
     text-align: center; }
     .site-main .page-header .page-title {
-      font-family: 'Bevan', cursive;
+      font-family: 'Raleway', cursive;
       font-variant: small-caps;
       padding-bottom: 1rem;
       color: #6f6f6f;
@@ -6277,7 +6099,7 @@ img {
     padding-top: 3rem;
     padding-bottom: 3rem; }
     .page-header-container .page-header h1 {
-      font-family: 'Bevan', cursive;
+      font-family: 'Raleway', cursive;
       font-variant: small-caps;
       font-size: 6rem;
       color: #d5d5d5; }
@@ -6288,6 +6110,8 @@ img {
  *
  */
 .blog-post {
+  flex-basis: 350px;
+  box-shadow: 9px 9px 18px #c4c4c4;
   background-color: rgba(247, 247, 247, 0.8);
   padding: 1rem;
   margin-bottom: 1rem;
@@ -6301,29 +6125,27 @@ img {
   /* This is the dangerous one in WebKit, as it breaks things wherever */
   /* Instead use this non-standard one: */
   /* Adds a hyphen where the word breaks, if supported (No Blink) */ }
-  .blog-post .entry-header {
-    background: -webkit-linear-gradient(white, black) left repeat;
-    background: linear-gradient(white, black) left repeat;
-    margin-bottom: 2.5rem; }
-    .blog-post .entry-header h1, .blog-post .entry-header h2 {
-      font-size: 3.5rem;
-      font-variant: small-caps;
-      font-weight: 300;
-      padding-top: 2rem;
-      padding-left: 2rem;
-      font-family: 'Lato', sans-serif;
-      color: white; }
-      .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
-        color: #57c889;
-        text-decoration: none; }
-        .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
-          color: black; }
-    .blog-post .entry-header .entry-meta {
-      padding-bottom: 1rem;
-      padding-left: 2rem;
-      color: #eeeeee; }
-      .blog-post .entry-header .entry-meta a {
-        color: #be8706; }
+  .blog-post:hover {
+    box-shadow: 0px 0px 0px white; }
+  .blog-post .entry-header h1, .blog-post .entry-header h2 {
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    font-weight: 300;
+    padding: 2rem;
+    padding-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: white; }
+    .blog-post .entry-header h1 a, .blog-post .entry-header h2 a {
+      color: #57c889;
+      text-decoration: none; }
+      .blog-post .entry-header h1 a:hover, .blog-post .entry-header h2 a:hover {
+        color: black; }
+  .blog-post .entry-header .entry-meta {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    color: #777777; }
+    .blog-post .entry-header .entry-meta a {
+      color: #be8706; }
   .blog-post .featured-img {
     padding-bottom: 2rem; }
     .blog-post .featured-img img {
@@ -6362,15 +6184,12 @@ img {
   .blog-post .only-text {
     margin-left: 1.3rem;
     margin-right: 1.4rem; }
-  .blog-post .entry-footer {
-    padding-bottom: 2rem;
-    padding-top: 2rem; }
-    .blog-post .entry-footer .cat-links a {
-      padding-left: 1rem; }
-    .blog-post .entry-footer .comments-link {
-      padding-left: 1rem; }
-    .blog-post .entry-footer .edit-link {
-      padding-left: 1rem; }
+  .blog-post .entry-footer .cat-links a {
+    padding-left: 1rem; }
+  .blog-post .entry-footer .comments-link {
+    padding-left: 1rem; }
+  .blog-post .entry-footer .edit-link {
+    padding-left: 1rem; }
   .blog-post .moretag {
     display: block;
     margin-top: 3rem; }
@@ -6400,27 +6219,25 @@ img {
  * Single Page w Sidebar
  *
  */
-.single-page {
-  background-color: rgba(234, 234, 234, 0.8); }
-  .single-page h1, .single-page h2, .single-page h3, .single-page h4, .single-page h5 {
-    color: #848484; }
-  .single-page .img-featured {
-    width: 100%;
-    height: auto;
-    padding-right: 0;
-    padding-left: 0; }
-  .single-page .entry-header h2 {
-    font-family: 'Bevan', cursive;
-    font-variant: small-caps;
-    font-size: 4rem;
-    color: #be8706;
-    padding-bottom: 1rem;
-    padding-right: 2rem; }
-  .single-page .entry-content {
-    padding: 3rem;
-    padding-top: 5rem;
-    font-size: 2rem;
-    font-weight: 300; }
+.single h1, .single h2, .single h3, .single h4, .single h5 {
+  color: #848484; }
+.single .img-featured {
+  width: 100%;
+  height: auto;
+  padding-right: 0;
+  padding-left: 0; }
+.single .entry-header h1 {
+  font-family: 'Raleway', cursive;
+  font-variant: small-caps;
+  font-size: 4rem;
+  color: #777777;
+  padding-bottom: 1rem;
+  padding-right: 2rem; }
+.single .entry-content {
+  padding: 3rem;
+  padding-top: 5rem;
+  font-size: 2rem;
+  font-weight: 300; }
 
 /**
  *
@@ -6508,7 +6325,7 @@ img {
   font-size: 2rem;
   color: #5e5e5e; }
   .single-details h2 {
-    font-family: 'Bevan', cursive;
+    font-family: 'Raleway', cursive;
     font-variant: small-caps;
     padding-bottom: 2rem; }
 
@@ -6519,7 +6336,7 @@ img {
   font-size: 1.8rem;
   color: #626262; }
   .single-description h2 {
-    font-family: 'Bevan', cursive;
+    font-family: 'Raleway', cursive;
     font-variant: small-caps;
     padding-bottom: 2rem;
     color: #6f6f6f; }

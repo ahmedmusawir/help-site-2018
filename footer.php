@@ -14,10 +14,10 @@
 
 <div class="footer-container">
 
-	<footer class="footer-main">
+	<footer class="footer-main navbar navbar-default navbar-fixed-bottom">
 
 		<section class="footer-body  container">
-
+			<!-- <div><strong>Current template:</strong> <?php echo get_current_template( true ); ?></div> -->
 		</section>
 
 
